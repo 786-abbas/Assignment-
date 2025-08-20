@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Last Assignment</title>
+</head>
+<body id="home">
+    <header>
+        <h1>My Portfolio Website</h1>
+        <img 
+            src="lion.jpg" 
+            alt="Image of a Lion here" 
+            width="300" 
+            height="200">
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="about">
+            <h2><u>About Me</u></h2>
+            <p>Hello! My name is <strong>John Doe</strong>.</p>
+            <p>I am learning <em>HTML</em>.</p>
+            <p><u>This is my personal portfolio website created as a part of an assignment.</u></p>
+        </section>
+        <section id="table">
+            <table border="1">
+                <tr>
+                    <th>Skills</th>
+                    <th>Level</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Advanced</td>
+                    <td>Semantic Tags, Forms, Media</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Intermediate</td>
+                    <td>Layout, Responsive Design</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Beginner</td>
+                    <td>DOM Manipulation</td>
+                </tr>
+            </table>
+        </section>
+        <section id="projects">
+            <h2><u>Projects</u></h2>
+            
+            <h3>1. Ordered List Example</h3>
+            <ol>
+                <li>Website using HTML Tags</li>
+                <li>Image Gallery Project</li>
+                <li>Feedback Form Project</li>
+            </ol>
+
+            <h3>2. Unordered List Example</h3>
+            <ul>
+                <li>Responsive Design</li>
+                <li>Mobile-Friendly Layout</li>
+                <li>SEO-Friendly</li>
+            </ul>
+
+            <h3>3. Description List Example</h3>
+            <dl>
+                <dt>Website using HTML Tags</dt>
+                <dd>A simple site to practice all HTML basics</dd>
+                <dt>Image Gallery Project</dt>
+                <dd>Display images with captions</dd>
+                <dt>Feedback Form Project</dt>
+                <dd>Collect user feedback via form</dd>
+            </dl>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" onsubmit="event.preventDefault();">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" minlength="3" maxlength="20" required>
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <br><br>
+
+                <label for="message">Message:</label>
+                <input type="text" name="message" id="message" required>
+                <br><br>
+
+                <p>Select Your City:</p>
+                <input type="radio" name="city" id="hyderabad" value="Hyderabad">
+                <label for="hyderabad">Hyderabad</label>
+
+                <input type="radio" name="city" id="karachi" value="Karachi">
+                <label for="karachi">Karachi</label>
+
+                <input type="radio" name="city" id="lahore" value="Lahore">
+                <label for="lahore">Lahore</label>
+                <br><br>
+
+                <p>Technologies Known:</p>
+                <input type="checkbox" name="tech" id="html" value="HTML">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" name="tech" id="css" value="CSS">
+                <label for="css">CSS</label>
+
+                <input type="checkbox" name="tech" id="js" value="JS">
+                <label for="js">JavaScript</label>
+                <br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Thanks for my visit website</p>
+    </footer>
+</body>
+</html>
